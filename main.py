@@ -15,6 +15,7 @@ print(items,)
 
 print("1.To remove something")
 print("2.To insert something")
+print("3.To replace something")
 
 
 choice = input("Enter choice(1/2/3/4): ")
@@ -37,5 +38,11 @@ if choice == "2":
         items.insert(index, add)
 
     items.append(add)
+
+if choice == "":
+    index = input("of which place u want to replace")
+    replace = input("To which u want to replace")
+    items[int(index)] = replace
+
 
 print(items)
